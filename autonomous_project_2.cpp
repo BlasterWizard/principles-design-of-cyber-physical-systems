@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------*/
+*----------------------------------------------------------------------------*/
 /* */
 /* Module: main.cpp */
 /* Author: VEX */
@@ -57,14 +57,14 @@ void autonomous(void) {
  // ..........................................................................
  // Insert autonomous user code here.
  // ..........................................................................
- Drivetrain.setDriveVelocity(80, percent);
+ Drivetrain.setDriveVelocity(70, percent);
  Drivetrain.turnFor(right, 125, degrees);
- Drivetrain.driveFor(forward, 50, inches);
+ Drivetrain.driveFor(forward, 60, inches);
  Fishy.set(true);
- Drivetrain.turnFor(left, 120, degrees);
- Drivetrain.driveFor(forward, 185, inches);
+ Drivetrain.turnFor(left, 105, degrees);
+ Drivetrain.driveFor(forward, 145, inches);
  Fishy.set(false);
- Drivetrain.driveFor(reverse, 25, inches);
+ Drivetrain.driveFor(reverse, 15, inches);
 }
  
 /*---------------------------------------------------------------------------*/
@@ -110,3 +110,4 @@ int main() {
  wait(100, msec);
  }
 }
+
